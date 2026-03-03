@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Libros</title>
+</head>
+<body>
+
+    <h1>Actividad CRUD con Django</h1>
+
+    <nav>
+        <a href="{% url 'listar_libros' %}">Listado de libros</a> |
+        <a href="{% url 'crear_libro' %}">Crear libro</a>
+    </nav>
+
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
